@@ -5,20 +5,20 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Minepack.Projectiles
+namespace TheMinepack.Projectiles
 {
-    public class StarScythe : ModProjectile
+    public class StarScytheProjectile : ModProjectile
     {
     	
         public override void SetDefaults()
         {
-        	projectile.CloneDefaults(ProjectileID.IceSickle);
+	    projectile.CloneDefaults(ProjectileID.IceSickle);
             projectile.name = "Starry Scythe";
             projectile.width = 32;
             projectile.scale = 1.15f;
             projectile.height = 32;
-			projectile.aiStyle = 18;
-			aiType = 274;
+	    projectile.aiStyle = 18;
+	    aiType = 274;
         }
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
