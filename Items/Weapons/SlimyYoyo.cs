@@ -21,7 +21,7 @@ public class SlimyYoyo : ModItem
         item.value = 50000;
         item.rare = 3;
         item.autoReuse = false;
-        item.shoot = mod.ProjectileType("SlimyYoyo");
+        item.shoot = mod.ProjectileType("SlimyYoyoProjectile");
     }
     
     public override void AddRecipes()
