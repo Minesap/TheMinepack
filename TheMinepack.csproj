@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8298EAB6-0586-4BDA-9483-83624B66B13A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheMinepack</RootNamespace>
+    <AssemblyName>TheMinepack</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Buffs\Enraged.cs" />
+    <Compile Include="Buffs\Vulnerable.cs" />
+    <Compile Include="Items\CondensedManaCrystal.cs" />
+    <Compile Include="Items\AntiMatter.cs" />
+    <Compile Include="Items\GelatinousHammer.cs" />
+    <Compile Include="Items\GelatinousBar.cs" />
+    <Compile Include="Items\GelatinousAxe.cs" />
+    <Compile Include="Items\MoonHeart.cs" />
+    <Compile Include="Items\Weapons\AmberYoyo.cs" />
+    <Compile Include="Items\Weapons\PharaohsAncientSword.cs" />
+    <Compile Include="Items\Weapons\SlimyYoyo.cs" />
+    <Compile Include="Items\Weapons\AncientBoneSword.cs" />
+    <Compile Include="Items\Weapons\AncientDusk.cs" />
+    <Compile Include="Items\Weapons\DiamondYoyo.cs" />
+    <Compile Include="Items\Weapons\AncientObsidianSword.cs" />
+    <Compile Include="Items\Weapons\GelatinousKatana.cs" />
+    <Compile Include="Items\Weapons\RubyYoyo.cs" />
+    <Compile Include="Items\Weapons\EmeraldYoyo.cs" />
+    <Compile Include="Items\Weapons\SapphireYoyo.cs" />
+    <Compile Include="Items\Weapons\TopazYoyo.cs" />
+    <Compile Include="Items\Weapons\AwakenedDragon.cs" />
+    <Compile Include="Items\Weapons\AmethystYoyo.cs" />
+    <Compile Include="Items\Weapons\CactusYoyo.cs" />
+    <Compile Include="Items\Weapons\CrystalSword.cs" />
+    <Compile Include="Items\Weapons\Stellarius.cs" />
+    <Compile Include="Items\TestBossBag.cs" />
+    <Compile Include="Items\TestSummon.cs" />
+    <Compile Include="Items\VoidBar.cs" />
+    <Compile Include="Items\WornGodMode.cs" />
+    <Compile Include="Items\GelatinousPickaxe.cs" />
+    <Compile Include="Items\YoyoString.cs" />
+    <Compile Include="NPCs\Piramyd\Piramyd.cs" />
+    <Compile Include="NPCs\TestBoss\TestBoss.cs" />
+    <Compile Include="NPCs\TheMinepackGlobalNPC.cs" />
+    <Compile Include="Projectiles\AmberYoyoProjectile.cs" />
+    <Compile Include="Projectiles\SlimyYoyoProjectile.cs" />
+    <Compile Include="Projectiles\DiamondYoyoProjectile.cs" />
+    <Compile Include="Projectiles\RubyYoyoProjectile.cs" />
+    <Compile Include="Projectiles\EmeraldYoyoProjectile.cs" />
+    <Compile Include="Projectiles\SapphireYoyoProjectile.cs" />
+    <Compile Include="Projectiles\TopazYoyoProjectile.cs" />
+    <Compile Include="Projectiles\AmethystYoyoProjectile.cs" />
+    <Compile Include="Projectiles\CactusYoyoProjectile.cs" />
+    <Compile Include="Projectiles\MeteorSlash.cs" />
+    <Compile Include="Projectiles\StellariusGem.cs" />
+    <Compile Include="Projectiles\AwakenedEnergy.cs" />
+    <Compile Include="Projectiles\VoidSickle.cs" />
+    <Compile Include="TheMinepack.cs" />
+    <Compile Include="Items\Weapons\IceSword.cs" />
+    <Compile Include="Items\Weapons\SwordOfMeteors.cs" />
+    <Compile Include="Items\Weapons\VoidReaper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Terraria">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sounds\Music\mr.mp3" />
+    <Content Include="Sounds\Music\RFNiii.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe" -build "$(ProjectDir)\" -eac "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

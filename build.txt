@@ -1,0 +1,8 @@
+author = Minesap
+version = 0.0.1
+homepage =
+hideCode = true
+hideResources = true
+includeSources = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*includePDB = true
+includePDB = true
