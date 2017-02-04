@@ -18,6 +18,13 @@ namespace TheMinepack.Projectiles
             ProjectileID.Sets.TrailingMode[projectile.type] = 0;
             aiType = ProjectileID.Code1;
         }
+        public override void AI()
+        {
+        	if (Main.rand.Next(15) == 0)
+        	{
+            	Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, 0f, 0f, 406, projectile.damage, projectile.knockBack, projectile.owner, 0f, 0f);
+        	}
+        }
 
     }
 }
