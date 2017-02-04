@@ -5,9 +5,9 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Minepack.Items;
+using TheMinepack.Items;
 
-namespace Minepack.Items.Weapons {
+namespace TheMinepack.Items.Weapons {
 public class SlimyYoyo : ModItem
 {
     public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
