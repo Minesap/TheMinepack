@@ -31,14 +31,14 @@ namespace TheMinepack.Items.Weapons
             item.useTime = 25;
             item.useAnimation = 25;
             item.useStyle = 5;
-            item.shoot = 3;
-            item.useAmmo = 1;
+            item.shoot = mod.ProjectileType("CrystalArrow");
+            item.useAmmo = 40;
             item.knockBack = 3;
             item.value = Item.sellPrice(0, 2, 0, 0);
             item.rare = 5;
             item.UseSound = SoundID.Item5;
             item.autoReuse = true;
-            item.shootSpeed = 8f;
+            item.shootSpeed = 6f;
 
         }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
