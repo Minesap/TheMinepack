@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -18,6 +21,7 @@ namespace TheMinepack.Projectiles
             ProjectileID.Sets.TrailingMode[projectile.type] = 0;
             aiType = ProjectileID.Code1;
         }
+
         public override void AI()
         {
         	if (Main.rand.Next(15) == 0)
