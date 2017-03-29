@@ -46,7 +46,7 @@ namespace TheMinepack.NPCs.Piramyd
 
         public override void NPCLoot()
         {
-            if (Main.rand.Next(10) == 0) // 10% Drop chance
+            if (Main.rand.Next(25) == 0) // 4% Drop chance
             {
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("PharaohsAncientSword"));
             }
