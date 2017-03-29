@@ -31,19 +31,20 @@ namespace TheMinepack.Items.Weapons
             item.useTime = 25;
             item.useAnimation = 25;
             item.useStyle = 5;
-            item.shoot = mod.ProjectileType("CrystalArrow");
+            item.shoot = ProjectileID.HolyArrow;
             item.useAmmo = 40;
             item.knockBack = 3;
             item.value = Item.sellPrice(0, 2, 0, 0);
             item.rare = 5;
             item.UseSound = SoundID.Item5;
             item.autoReuse = true;
-            item.shootSpeed = 6f;
+            item.shootSpeed = 8f;
 
         }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
-            Projectile.NewProjectile(position.X, position.Y, speedX, speedY, mod.ProjectileType("CrystalArrow"), damage, knockBack, player.whoAmI, 0f, 0f); //This is spawning a projectile of type FrostburnArrow using the original stats
+            //Projectile.NewProjectile(position.X, position.Y, speedX, speedY, mod.ProjectileType("CrystalArrow"), damage, knockBack, player.whoAmI, 0f, 0f); //This is spawning a projectile of type FrostburnArrow using the original stats
+            Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.HolyArrow, damage, knockBack, player.whoAmI, 0f, 0f);
             return false;
         }
     }

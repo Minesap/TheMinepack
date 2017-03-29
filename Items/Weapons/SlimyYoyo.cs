@@ -21,9 +21,9 @@ public class SlimyYoyo : ModItem
     	item.CloneDefaults(ItemID.Code1);
         item.name = "Slimy Yoyo";
         item.damage = 20;
-	item.useTime = 22;
-	item.useAnimation = 22;
-	item.useStyle = 5;
+	    item.useTime = 22;
+	    item.useAnimation = 22;
+	    item.useStyle = 5;
         item.channel = true;
         item.melee = true;
         item.knockBack = 2;
@@ -35,11 +35,11 @@ public class SlimyYoyo : ModItem
     
     public override void AddRecipes()
 	{
-	  ModRecipe recipe = new ModRecipe(mod);
-          recipe.AddIngredient(null, "GelatinousBar", 10);
-	  recipe.AddIngredient(null, "YoyoString", 1);
-          recipe.AddTile(TileID.Solidifier);
-          recipe.SetResult(this);
-          recipe.AddRecipe();
+	     ModRecipe recipe = new ModRecipe(mod);
+         recipe.AddIngredient(null, "GelatinousBar", 10);
+	     recipe.AddIngredient(null, "YoyoString", 1);
+         recipe.AddTile(TileID.Solidifier);
+         recipe.SetResult(this);
+         recipe.AddRecipe();
 	}
 }}
